@@ -3,15 +3,7 @@ import * as http from "http"
 
 declare namespace botkit {
   function slackbot(configuration: SlackConfiguration): SlackController;
-  function facebookbot(configuration: FacebookConfiguration): FacebookController;
-  function webexbot(configuration: WebexConfiguration): WebexController;
-  function twilioipmbot(configuration: TwilioIPMConfiguration): TwilioIPMController;
-  function twiliosmsbot(configuration: TwilioSMSConfiguration): TwilioSMSController;
-  function botframeworkbot(configuration: BotFrameworkConfiguration): BotFrameworkController;
-  function teamsbot(configuration: TeamsConfiguration): TeamsController;
   function consolebot(configuration: ConsoleConfiguration): ConsoleController;
-  function jabberbot(configuration: JabberConfiguration): JabberController;
-  function socketbot(configuration: WebConfiguration): WebController;
   function anywhere(configuration: WebConfiguration): WebController;
 
   interface Bot<S, M extends Message> {
